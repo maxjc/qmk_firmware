@@ -24,23 +24,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT,   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                              KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_RSFT,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTL,  KC_SCLN , KC_Q,    KC_J,    KC_K,    KC_X,  KC_ENTER,          KC_BSPC, KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_RCTL,
+     KC_LCTL,  KC_SCLN , KC_Q,    KC_J,    KC_K,    KC_X,  KC_DEL,            KC_BSPC, KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_RCTL,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                     LOWER,  KC_LALT, KC_SPC,                    KC_ENTER,  KC_RALT,  RAISE
+                                     LOWER  , KC_LALT, KC_SPC ,                  KC_ENTER, KC_RALT,  RAISE
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
   [_LOWER] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     KC_TILD, KC_F1,    KC_F2,   KC_F3,   KC_F4,  KC_F5,                               KC_DEL, KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_EQL,
+     KC_F1   , KC_F2  , KC_F3  ,  KC_F4 ,  KC_F5 ,  KC_F6 ,				KC_DEL, KC_F7,   KC_F8,    KC_F9,  KC_F10,  KC_F11,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB,   KC_1,    KC_2,    KC_3,    KC_4 ,   KC_BSPC,                            KC_BSPC, KC_LBRC, KC_LPRN,KC_RPRN, KC_RBRC, KC_SLSH,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_HOME, KC_PGUP, KC_PGDN, KC_END,   KC_BSPC,                            KC_BSPC, KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT,KC_MINS,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTL, _______, _______, _______, KC_DOWN, KC_ENTER,KC_ENTER,          KC_BSPC ,KC_ENTER, KC_P1,  KC_LPRN, KC_RPRN,KC_BSLS, KC_RCTL,
+     KC_LCTL, _______, _______, _______, KC_DOWN, KC_ENTER,KC_DEL,          KC_BSPC ,KC_ENTER, KC_P1,  KC_LPRN, KC_RPRN,KC_BSLS, KC_RCTL,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, KC_LALT, KC_SPC,                    KC_SPC,  KC_RALT ,_______
+                                    _______, KC_LALT, KC_SPC,                    KC_ENTER,  KC_RALT , KC_F12
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_HOME, KC_PGUP, KC_PGDN, KC_END,   KC_BSPC,                            KC_BSPC, KC_LEFT, KC_DOWN,  KC_UP,  KC_RIGHT,KC_MINS,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTL, KC_BSLS, KC_MPLY, KC_VOLD, KC_PGDN, KC_ENTER,KC_ENTER,          KC_BSPC, KC_ENTER, KC_END,  RGB_HUD, RGB_SAD, RGB_VAD, KC_RCTL,
+     KC_LCTL, KC_BSLS, KC_MPLY, KC_VOLD, KC_PGDN, KC_ENTER,KC_DEL,          KC_BSPC, KC_ENTER, KC_END,  RGB_HUD, RGB_SAD, RGB_VAD, KC_RCTL,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, KC_LALT, KC_SPC,                    KC_ENTER,  KC_RALT, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
